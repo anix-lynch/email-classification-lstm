@@ -17,7 +17,7 @@ tags: ai, llm, pinecone, langchain, vectordatabases
 
 * **Traditional Databases**: Handle structured data (rows and columns) best, like in SQL databases.
     
-* **Vector Databases**: Specialize in unstructured data (images, text, audio), using **vectors** to store data in a format that enables fast, efficient similarity searches.
+* **Vector Databases**: <mark>Specialize in unstructured data (images, text, audio)</mark>, using **vectors** to store data in a format that enables fast, efficient similarity searches.
     
 
 #### 2\. **Limitations & Challenges of Traditional Databases**
@@ -169,7 +169,7 @@ Vector similarity measures help in determining how close or aligned two vectors 
     
     * **Definition**: Measures the angle between two vectors, focusing on **direction**, not magnitude.
         
-    * **Formula**: (\\text{cosine similarity} = \\frac{\\text{A} \\cdot \\text{B}}{||\\text{A}|| \\times ||\\text{B}||})
+    * **Formula**: \\(\text{cosine similarity} = \frac{\text{A} \cdot \text{B}}{||\text{A}|| \times ||\text{B}||}\\)
         
     * **Interpretation**: Value close to 1 means vectors point in similar directions; 0 means perpendicular; -1 means opposite directions.
         
@@ -182,7 +182,7 @@ Vector similarity measures help in determining how close or aligned two vectors 
     
     * **Definition**: Measures the **straight-line distance** between two points in space, accounting for magnitude.
         
-    * **Formula**: (\\text{Euclidean distance} = \\sqrt{(x\_2 - x\_1)^2 + (y\_2 - y\_1)^2 + \\ldots})
+    * **Formula**: \\({Euclidean distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + \ldots}\\)
         
     * **Interpretation**: Smaller distance means vectors are closer together, larger distance means they are farther apart.
         
@@ -195,7 +195,7 @@ Vector similarity measures help in determining how close or aligned two vectors 
     
     * **Definition**: Measures how much two vectors are pointing in the same direction, emphasizing both **magnitude and direction**.
         
-    * **Formula**: (\\text{dot product} = x\_1 \\cdot x\_2 + y\_1 \\cdot y\_2 + \\ldots)
+    * **Formula**: \\({dot product} = x_1 \cdot x_2 + y_1 \cdot y_2 + \ldots)\\)
         
     * **Interpretation**: Positive value means vectors point in the same general direction; 0 means they are perpendicular; negative means opposite.
         
