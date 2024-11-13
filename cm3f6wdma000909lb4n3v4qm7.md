@@ -11,6 +11,8 @@ tags: nlp, space, nltk, huggingface
 
 Source code here:
 
+[https://gist.github.com/2f8b8167ae5c557dc027dc19f9a84c2b.git](https://gist.github.com/2f8b8167ae5c557dc027dc19f9a84c2b.git)
+
 ### Chunk 1: Basic Tokenization with NLTK
 
 1. **Code**: Tokenization is breaking down a sentence into individual words or symbols. Here, we use `nltk`, a popular Python library for natural language processing (NLP).
