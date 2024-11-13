@@ -5,13 +5,48 @@ seoDescription: "NLTK/Spacy VS HuggingFace"
 datePublished: Wed Nov 13 2024 01:15:38 GMT+0000 (Coordinated Universal Time)
 cuid: cm3f6wdma000909lb4n3v4qm7
 slug: nltkspacy-vs-huggingface
-tags: nlp, space, nltk, huggingface
+tags: ai, nlp, space, nltk, huggingface
 
 ---
 
-Source code here:
+# Source code here:
+
+NLTK/Spacy Code
 
 [https://gist.github.com/2f8b8167ae5c557dc027dc19f9a84c2b.git](https://gist.github.com/2f8b8167ae5c557dc027dc19f9a84c2b.git)
+
+HuggingFace Code
+
+[https://gist.github.com/e293e7c3f26dd7f4104a62a9d447ec95.git](https://gist.github.com/e293e7c3f26dd7f4104a62a9d447ec95.git)
+
+# Table summarizing the NLP tasks and which tool is best
+
+| **Task** | **Best Tool** | **Reason** |
+| --- | --- | --- |
+| **Tokenization** | Hugging Face Transformers | Efficient and language model-specific tokenization (e.g., BERT or GPT tokenization). |
+| **Frequency Distribution** | NLTK | `FreqDist` handles large corpora efficiently and supports robust frequency analysis. |
+| **Part-of-Speech (POS) Tagging** | Hugging Face / SpaCy | Hugging Face for individual sentences; SpaCy for large texts or fast batch processing. |
+| **Named Entity Recognition (NER)** | Hugging Face Transformers | State-of-the-art models for entity recognition with pipelines for efficient setup. |
+| **Dependency Parsing** | SpaCy | Direct support for dependency parsing; displaCy also visualizes dependency graphs. |
+| **Syntax Tree Visualization** | NLTK / SpaCy | NLTK for tree diagrams, SpaCy with displaCy for visualizing dependencies. |
+| **WordCloud Generation** | NLTK (for corpora) + WordCloud | Frequency analysis via NLTK; WordCloud library for visualizing most common words. |
+| **Large Corpus Analysis** | NLTK / SpaCy | NLTK provides corpora (e.g., `movie_reviews`), SpaCy handles batch processing efficiently. |
+| **Text Classification** | Hugging Face Transformers | Transformers (e.g., BERT) provide state-of-the-art models for classification tasks. |
+| **Summarization** | Hugging Face Transformers | Specialized summarization models available (e.g., BART, T5) for concise text summaries. |
+| **Translation** | Hugging Face Transformers | Translation models (e.g., MarianMT) offer support for many languages with minimal setup. |
+
+### Summary:
+
+* **Hugging Face Transformers**: Best for advanced NLP tasks (classification, summarization, NER, translation) and sentence-level analysis.
+    
+* **SpaCy**: Excels in dependency parsing, efficient POS tagging, and batch processing for large documents.
+    
+* **NLTK**: Ideal for tasks involving large corpora, frequency analysis, and syntax tree generation.
+    
+
+This table provides a clear overview of the optimal tool for each task, helping to leverage the strengths of each library effectively. Let me know if you’d like more details on any specific task!
+
+# NLTK/SPACY Code with sample output
 
 ### Chunk 1: Basic Tokenization with NLTK
 
@@ -440,10 +475,6 @@ Got it! I'll ensure each line has detailed inline comments, along with clear exp
 
 ---
 
-Continuing with the detailed explanations for the next chunks.
-
----
-
 ### Chunk 13: Tokenizing and POS Tagging Multiple Sentences in NLTK
 
 1. **Explanation**: This chunk shows how to tag multiple sentences at once, where each sentence is treated as a separate list of words.
@@ -566,5 +597,166 @@ Continuing with the detailed explanations for the next chunks.
     
     * A bar chart with POS tags on the x-axis and their respective frequencies on the y-axis, showing the distribution of POS types in the movie reviews corpus.
         
+
+# Hugging Face’s approach with Sample Output
+
+<mark>We now willl focus on making the code shorter and leveraging the power of pre-trained models for tasks like tokenization, POS tagging, frequency analysis, and visualization. This approach will use the </mark> `transformers` <mark> library, which provides efficient implementations of various NLP models</mark>.
+
+---
+
+### Chunk 1 & 2: Tokenization and Frequency Distribution with Hugging Face
+
+Using Hugging Face, tokenization and frequency distribution can be handled with a few lines. Here, I’ll use BERT’s tokenizer.
+
+1. **Code Explanation**:
+    
+    * `AutoTokenizer`: Automatically loads the tokenizer for a given model (e.g., BERT).
+        
+    * `Counter`: Counts token frequencies.
+        
+2. **Code**:
+    
+    ```python
+    from transformers import AutoTokenizer
+    from collections import Counter
+    
+    # Load the tokenizer
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    
+    # Tokenize text
+    text = "we'd like to book a flight from boston to london"
+    tokens = tokenizer.tokenize(text)
+    print("Tokens:", tokens)  # Display tokenized words
+    
+    # Frequency distribution of tokens
+    token_freq = Counter(tokens)
+    print("Token Frequency:", token_freq)
+    ```
+    
+3. **Sample Output**:
+    
+    ```python
+    Tokens: ['we', "'", 'd', 'like', 'to', 'book', 'a', 'flight', 'from', 'boston', 'to', 'london']
+    Token Frequency: Counter({'to': 2, 'we': 1, ...})
+    ```
+    
+
+---
+
+### Chunk 3 & 5: Part-of-Speech Tagging with Hugging Face
+
+Hugging Face models don’t directly provide POS tags. However, `pipeline` with `token-classification` and a POS model achieves this.
+
+1. **Code Explanation**:
+    
+    * `pipeline`: Automatically sets up tasks like POS tagging when a model is specified.
+        
+    * `AutoModelForTokenClassification` + `AutoTokenizer`: For POS tagging.
+        
+2. **Code**:
+    
+    ```python
+    from transformers import pipeline
+    
+    # Load POS tagging pipeline
+    pos_pipeline = pipeline("token-classification", model="vblagoje/bert-english-uncased-finetuned-pos")
+    
+    # Run POS tagging
+    pos_tags = pos_pipeline(text)
+    print("POS Tags:", pos_tags)  # Shows words with POS tags
+    ```
+    
+3. **Sample Output**:
+    
+    ```python
+    [{'word': 'we', 'entity': 'PRON', 'score': 0.99}, {'word': "'", 'entity': 'PUNCT', 'score': 0.98}, ...]
+    ```
+    
+
+---
+
+### Chunk 6 & 7: Named Entity Recognition (NER) and Dependency Parsing with Hugging Face
+
+For NER, Hugging Face models can recognize entities with `pipeline("ner")`. Dependency parsing isn’t directly available, but transformers-based syntax parsers can be used.
+
+1. **Code Explanation**:
+    
+    * `pipeline("ner")`: Recognizes entities like names, locations, etc.
+        
+2. **Code**:
+    
+    ```python
+    # Load NER pipeline
+    ner_pipeline = pipeline("ner", model="dbmdz/bert-large-cased-finetuned-conll03-english")
+    
+    # Run NER on text
+    entities = ner_pipeline(text)
+    print("Named Entities:", entities)
+    ```
+    
+3. **Sample Output**:
+    
+    ```python
+    [{'word': 'boston', 'entity': 'LOC'}, {'word': 'london', 'entity': 'LOC'}]
+    ```
+    
+
+---
+
+### Chunk 10 & 11: Generating Frequency Distribution and WordCloud with Hugging Face
+
+For word frequency and WordCloud, we’ll use tokenization frequency from Hugging Face models and standard visualization tools.
+
+1. **Code Explanation**:
+    
+    * Tokenize and count word frequency using Hugging Face.
+        
+    * Generate WordCloud from frequencies.
+        
+2. **Code**:
+    
+    ```python
+    from wordcloud import WordCloud
+    import matplotlib.pyplot as plt
+    
+    # Tokenize and count word frequencies
+    tokens = tokenizer.tokenize(" ".join(movie_reviews.words()[:500]))  # Use a sample for speed
+    word_freq = Counter(tokens)
+    
+    # Generate WordCloud
+    wordcloud = WordCloud(width=600, height=300, background_color='white').generate_from_frequencies(word_freq)
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
+    ```
+    
+
+---
+
+### Chunk 12 & 13: POS Frequency Analysis for the Movie Corpus
+
+1. **Code Explanation**:
+    
+    * Apply the POS pipeline to sentences, count POS tags, and visualize.
+        
+2. **Code**:
+    
+    ```python
+    # Sample movie review sentences and POS tagging
+    sentences = [" ".join(sent) for sent in movie_reviews.sents()[:5]]  # Small sample for speed
+    pos_counts = Counter()
+    
+    # Tag each sentence and accumulate POS counts
+    for sent in sentences:
+        pos_tags = pos_pipeline(sent)
+        pos_counts.update(tag['entity'] for tag in pos_tags)
+    
+    print("POS Frequency:", pos_counts)
+    ```
+    
+
+---
+
+This approach condenses the tasks into fewer lines using Hugging Face models while retaining functionality. Let me know if you'd like any further customization or explanations!
 
 ---
