@@ -1,7 +1,7 @@
 ---
 title: "NLTK/Spacy VS HuggingFace #1 - Tokenization, POS tagging, NER, and summarization"
 seoTitle: "NLTK/Spacy VS HuggingFace"
-seoDescription: "NLTK/Spacy VS HuggingFace"
+seoDescription: "NLTK/Spacy VS HuggingFace #1 - Tokenization, POS tagging, NER, and summarization"
 datePublished: Wed Nov 13 2024 01:15:38 GMT+0000 (Coordinated Universal Time)
 cuid: cm3f6wdma000909lb4n3v4qm7
 slug: nltkspacy-vs-huggingface
