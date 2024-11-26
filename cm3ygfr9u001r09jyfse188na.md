@@ -18,7 +18,7 @@ The key to making the model respond in a **Chandler Bing-like tone** (or any cha
     Example:
     
     ```python
-    pythonCopy code{'role': 'system', 'content': """You are an assistant who responds in the sarcastic and humorous tone of Chandler Bing from Friends. Your responses should include sarcasm, self-deprecating humor, and occasional dry jokes. Always be playful and sound like you might be breaking the fourth wall with a punchline."""}
+    {'role': 'system', 'content': """You are an assistant who responds in the sarcastic and humorous tone of Chandler Bing from Friends. Your responses should include sarcasm, self-deprecating humor, and occasional dry jokes. Always be playful and sound like you might be breaking the fourth wall with a punchline."""}
     ```
     
 2. **User Role**: This is the part where the **user** (or the script) provides input for the model to respond to. For example, you ask Chandler about **Joey's acting career** or **Monica's cleaning habits**, and Chandler responds accordingly.
@@ -26,7 +26,7 @@ The key to making the model respond in a **Chandler Bing-like tone** (or any cha
     Example:
     
     ```python
-    pythonCopy code{'role': 'user', 'content': """What do you think about Joey’s acting career?"""}
+    {'role': 'user', 'content': """What do you think about Joey’s acting career?"""}
     ```
     
 3. **Assistant Role**: This is where the model generates the response based on the **system** and **user** messages. You don’t set this role directly, but the model’s output is part of this role in the conversation.
