@@ -24,9 +24,9 @@ tags: startups, venture-capital, business-model, unit-economics, ai-business-mod
 | --- | --- | --- | --- |
 | **Average Project Value (APV)** | The average revenue generated per custom AI project. | $100K–$1M+ | Higher APVs reflect the complexity and customization of solutions. |
 | **Project Completion Time** | Average time required to deliver a project. | 6–12 months | Shorter timelines improve scalability and client satisfaction. |
-| **Client Retention Rate** | Percentage of clients returning for additional projects or services. | \&gt;70% | Repeat clients are a key driver of long-term profitability. |
+| **Client Retention Rate** | Percentage of clients returning for additional projects or services. | &gt;70% | Repeat clients are a key driver of long-term profitability. |
 | **Gross Margin** | Revenue minus direct costs (consulting, development). | 50–70% | Lower than SaaS due to high labor and development costs. |
-| **Utilization Rate** | Percentage of time billable resources spend on revenue-generating activities. | \&gt;80% | Indicates efficiency in resource allocation. |
+| **Utilization Rate** | Percentage of time billable resources spend on revenue-generating activities. | &gt;80% | Indicates efficiency in resource allocation. |
 
 ---
 
@@ -153,7 +153,7 @@ tags: startups, venture-capital, business-model, unit-economics, ai-business-mod
 | **Fixed-Price Projects** | One-time fee for delivering a custom AI solution. | Fractal Analytics, Zest AI | $100,000–$500,000/project. |
 | **Retainer-Based Engagements** | Monthly fee for ongoing consulting, development, or AI enhancements. | Insilico Medicine, Fractal AI | $20,000–$100,000/month. |
 | **Per-Feature Pricing** | Charges based on the number of AI features or models developed. | Pathmind | $50,000–$250,000/feature. |
-| **Subscription for Maintenance** | Recurring charges for maintaining and updating deployed AI solutions. | Zest AI | $10,000–$50,000/year. | |
+| **Subscription for Maintenance** | Recurring charges for maintaining and updating deployed AI solutions. | Zest AI | $10,000–$50,000/year. |
 
 ---
 
@@ -167,3 +167,9 @@ tags: startups, venture-capital, business-model, unit-economics, ai-business-mod
     
 
 ---
+
+### **9\. Monetization Trends**
+
+* **Industry-Specific SaaS**: While these tools resemble SaaS, the initial phase often involves custom AI development.
+    
+* **AI-Powered Marketplaces**: Custom tools for e-commerce or marketplaces often begin with bespoke solutions (e.g., AI recommendation engines).
