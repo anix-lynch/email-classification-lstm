@@ -13,7 +13,7 @@ tags: startups, venture-capital, business-model, unit-economics, ai-business-mod
 
 * **Description**: Custom AI development focuses on creating bespoke AI solutions tailored to specific client needs, such as predictive analytics, automation workflows, or custom NLP and computer vision models. This model typically involves consulting, development, and deployment services.
     
-* **Companies**: Insilico Medicine, Fractal Analytics, Zest AI.
+* **Companies**: Insilico Medicine, Fractal Analytics, Zest AI, Deloitte AI, Accenture AI
     
 
 ---
@@ -24,9 +24,9 @@ tags: startups, venture-capital, business-model, unit-economics, ai-business-mod
 | --- | --- | --- | --- |
 | **Average Project Value (APV)** | The average revenue generated per custom AI project. | $100K–$1M+ | Higher APVs reflect the complexity and customization of solutions. |
 | **Project Completion Time** | Average time required to deliver a project. | 6–12 months | Shorter timelines improve scalability and client satisfaction. |
-| **Client Retention Rate** | Percentage of clients returning for additional projects or services. | &gt;70% | Repeat clients are a key driver of long-term profitability. |
+| **Client Retention Rate** | Percentage of clients returning for additional projects or services. | \&gt;70% | Repeat clients are a key driver of long-term profitability. |
 | **Gross Margin** | Revenue minus direct costs (consulting, development). | 50–70% | Lower than SaaS due to high labor and development costs. |
-| **Utilization Rate** | Percentage of time billable resources spend on revenue-generating activities. | &gt;80% | Indicates efficiency in resource allocation. |
+| **Utilization Rate** | Percentage of time billable resources spend on revenue-generating activities. | \&gt;80% | Indicates efficiency in resource allocation. |
 
 ---
 
