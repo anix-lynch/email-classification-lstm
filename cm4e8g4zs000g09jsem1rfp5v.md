@@ -1,10 +1,10 @@
 ---
-title: "Model 10#: Ad-Supported AI Platforms"
+title: "AI Business Model 9#: Ad-Supported AI Platforms"
 seoTitle: "Model 10#: Ad-Supported AI Platforms"
 seoDescription: "Model 10#: Ad-Supported AI Platforms"
 datePublished: Sat Dec 07 2024 13:50:55 GMT+0000 (Coordinated Universal Time)
 cuid: cm4e8g4zs000g09jsem1rfp5v
-slug: model-10-ad-supported-ai-platforms
+slug: ai-business-model-9-ad-supported-ai-platforms
 tags: ai, startups, venture-capital, unit-economics, ai-business-model
 
 ---
