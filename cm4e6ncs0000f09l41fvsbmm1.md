@@ -22,11 +22,11 @@ tags: ai, startups, venture-capital, unit-economics, ai-business-model
 
 | **Metric** | **Definition** | **Target Value (Benchmark)** | **Comments** |
 | --- | --- | --- | --- |
-| **Monthly Recurring Revenue (MRR)** | Total recurring subscription revenue per month. | \&gt;$1M for growing SaaS startups | A key indicator of predictable revenue growth. |
+| **Monthly Recurring Revenue (MRR)** | Total recurring subscription revenue per month. | &gt;$1M for growing SaaS startups | A key indicator of predictable revenue growth. |
 | **Average Revenue Per User (ARPU)** | Average revenue generated per paying customer. | $20–$200/user/month | Higher ARPU often reflects premium features or enterprise plans. |
 | **Churn Rate** | Percentage of customers lost each month. | &lt;2% | Low churn indicates strong customer satisfaction and retention. |
 | **Customer Acquisition Cost (CAC)** | Cost to acquire a new customer. | $100–$1,000+ | Varies significantly by target audience (SMBs vs. enterprises). |
-| **Gross Margins** | Revenue minus cost of goods sold (COGS). | \&gt;75% | SaaS models generally have high margins due to low incremental costs. |
+| **Gross Margins** | Revenue minus cost of goods sold (COGS). | &gt;75% | SaaS models generally have high margins due to low incremental costs. |
 
 ---
 
@@ -164,3 +164,11 @@ tags: ai, startups, venture-capital, unit-economics, ai-business-model
     
 
 ---
+
+### **9\. Monetization Trends**
+
+* **AI as Premium Add-Ons**: SaaS tools often charge separately for AI-driven features (e.g., Notion AI).
+    
+* **Freemium with AI Upsells**: A popular SaaS strategy, where AI features are part of higher-tier subscriptions (e.g., Grammarly).
+    
+* **AI Co-Pilots for Enterprise**: Productivity tools like GitHub Copilot fall under SaaS with subscription models.
