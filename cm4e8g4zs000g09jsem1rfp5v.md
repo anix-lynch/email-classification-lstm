@@ -28,11 +28,11 @@ tags: ai, startups, venture-capital, unit-economics, ai-business-model
 
 | **Metric** | **Definition** | **Target Value (Benchmark)** | **Comments** |
 | --- | --- | --- | --- |
-| **Monthly Active Users (MAU)** | Total unique users interacting with the platform monthly. | \&gt;100M for large platforms | A critical metric for ad inventory scalability. |
+| **Monthly Active Users (MAU)** | Total unique users interacting with the platform monthly. | &gt;100M for large platforms | A critical metric for ad inventory scalability. |
 | **Ad Impressions** | Total number of ads shown to users monthly. | 1B+ | Indicates platform reach and engagement. |
 | **Ad Revenue per User (ARPU)** | Average revenue generated per user from ads. | $5–$20 annually | Higher ARPU reflects better ad targeting and inventory utilization. |
 | **Click-Through Rate (CTR)** | Percentage of ad impressions that result in clicks. | 1%–2% | A key measure of ad effectiveness and relevance. |
-| **Retention Rate** | Percentage of users retained annually. | \&gt;85% | Indicates user satisfaction and long-term engagement. |
+| **Retention Rate** | Percentage of users retained annually. | 85% | Indicates user satisfaction and long-term engagement. |
 
 ---
 
