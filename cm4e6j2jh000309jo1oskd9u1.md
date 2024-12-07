@@ -22,11 +22,11 @@ tags: ai, startups, venture-capital, unit-economics, ai-business-model
 
 | **Metric** | **Definition** | **Target Value (Benchmark)** | **Comments** |
 | --- | --- | --- | --- |
-| **Monthly API Requests** | The number of API calls made by customers each month. | \&gt;10M requests | High usage reflects strong customer adoption. |
+| **Monthly API Requests** | The number of API calls made by customers each month. | &gt;10M requests | High usage reflects strong customer adoption. |
 | **Revenue per API Call** | Average revenue generated per API call. | $0.001–$0.005 | Higher for specialized APIs, lower for commoditized ones. |
-| **Enterprise Client Share** | Percentage of revenue from enterprise clients. | \&gt;60% | Enterprise clients typically ensure stability and high contract value. |
-| **Retention Rate** | Percentage of customers retained annually. | \&gt;90% | High retention ensures predictable revenue streams. |
-| **Gross Margins** | Revenue minus cost of goods sold (COGS). | \&gt;85% | APIs have low marginal costs but may incur cloud infrastructure expenses. |
+| **Enterprise Client Share** | Percentage of revenue from enterprise clients. | &gt;60% | Enterprise clients typically ensure stability and high contract value. |
+| **Retention Rate** | Percentage of customers retained annually. | &gt;90% | High retention ensures predictable revenue streams. |
+| **Gross Margins** | Revenue minus cost of goods sold (COGS). | &gt;85% | APIs have low marginal costs but may incur cloud infrastructure expenses. |
 
 ---
 
@@ -161,3 +161,9 @@ tags: ai, startups, venture-capital, unit-economics, ai-business-model
     
 
 ---
+
+### **9\. Monetization Trends**
+
+* **Usage-Based Pricing for AI Features**: Pay-per-use pricing fits under Selling API Access (e.g., OpenAI, Twilio).
+    
+* **Freemium with AI Upsells**: API platforms often provide free tiers to encourage adoption and charge for higher usage.
