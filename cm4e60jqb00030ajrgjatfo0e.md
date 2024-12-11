@@ -22,11 +22,11 @@ tags: artificial-intelligence, startups, monetization, venture-capital, business
 
 | **Metric** | **Definition** | **Target Value (Benchmark)** | **Comments** |
 | --- | --- | --- | --- |
-| **Active User Base (MAU)** | Monthly active users engaging with the open-source platform. | &gt;100K | A large, engaged community supports long-term adoption and monetization. |
+| **Active User Base (MAU)** | Monthly active users engaging with the open-source platform. | \&gt;100K | A large, engaged community supports long-term adoption and monetization. |
 | **Freemium Conversion Rate** | Percentage of free users upgrading to paid plans. | 1-5% | Low conversion rates are normal, but freemium allows large user acquisition. |
-| **Enterprise Revenue Share** | % of revenue from enterprise customers. | &gt;70% | Enterprise clients drive the majority of revenue in this model. |
-| **Retention Rate** | Percentage of paid users retained annually. | &gt;90% | High retention ensures long-term revenue predictability. |
-| **Gross Margin** | Revenue minus costs as a percentage of revenue. | &gt;80% | High margins are typical due to low incremental costs for software delivery. |
+| **Enterprise Revenue Share** | % of revenue from enterprise customers. | \&gt;70% | Enterprise clients drive the majority of revenue in this model. |
+| **Retention Rate** | Percentage of paid users retained annually. | \&gt;90% | High retention ensures long-term revenue predictability. |
+| **Gross Margin** | Revenue minus costs as a percentage of revenue. | \&gt;80% | High margins are typical due to low incremental costs for software delivery. |
 
 ---
 
@@ -176,3 +176,134 @@ tags: artificial-intelligence, startups, monetization, venture-capital, business
 * **Managed AI Hosting**: Companies like Hugging Face charge for hosting and fine-tuning open-source models, fitting this model.
     
 * **Freemium + Premium Services**: Freemium users access base features, with premium tiers for enterprise or advanced tools.
+    
+
+### 10.Companies using this model
+
+---
+
+### **1\. LangChain**
+
+* **Open-Source Status**: LangChain is fully open-source, with its code available on GitHub. It provides tools for building LLM-powered applications like chatbots and Retrieval-Augmented Generation workflows\[1\].
+    
+* **Freemium Tier**: Offers free access to the open-source framework. Monetization comes through managed services like LangSmith for debugging and scaling\[1\].
+    
+
+---
+
+### **2\. Hugging Face**
+
+* **Open-Source Status**: Hugging Face is central to the open-source AI ecosystem, hosting models like BLOOM and Llama 2, which are fully open-source\[2\].
+    
+* **Freemium Tier**: Provides free access to models and datasets. Paid services include hosted inference APIs, AutoTrain for fine-tuning, and enterprise solutions\[2\].
+    
+
+---
+
+### **3\. Airtable**
+
+* **Open-Source Status**: Airtable itself is not open-source. However, community-driven tools (e.g., backup utilities) have been released as open-source projects\[3\].
+    
+* **Freemium Tier**: Offers a free tier for basic use, with paid plans for advanced features and larger teams.
+    
+
+---
+
+### **4\. OpenAI**
+
+* **Open-Source Status**: OpenAI's name can be misleading; its core models (e.g., GPT, DALL-E) are proprietary. Earlier versions like GPT-2 were open-sourced, but current offerings are API-based and closed-source\[4\].
+    
+* **Freemium Tier**: Provides free API credits for new users, with usage-based pricing for higher tiers\[4\].
+    
+
+---
+
+### **5\. Pinecone**
+
+* **Open-Source Status**: Pinecone is not open-source but integrates with open-source tools like LangChain and Hugging Face\[5\].
+    
+* **Freemium Tier**: Offers a free tier with limited usage (e.g., 1 pod, 5GB storage). Paid plans scale up features and capacity\[5\].
+    
+
+---
+
+### **6\. Cohere**
+
+* **Open-Source Status**: Cohere has released open-source multilingual models like Aya 23, contributing to the community while also offering proprietary solutions\[6\].
+    
+* **Freemium Tier**: Free-tier API access is available, with paid options for fine-tuning and enterprise-grade services\[6\].
+    
+
+---
+
+### **7\. LlamaIndex**
+
+* **Open-Source Status**: Fully open-source framework for data indexing and querying with LLMs\[7\].
+    
+* **Freemium Tier**: Free for self-hosted use; monetization comes from managed services and enterprise support\[7\].
+    
+
+---
+
+### **8\. Weaviate**
+
+* **Open-Source Status**: Fully open-source vector database supporting semantic search and hybrid search capabilities\[8\].
+    
+* **Freemium Tier**: Free self-hosted version; paid cloud-hosted options for scalability and support\[8\].
+    
+
+---
+
+### **9\. Streamlit**
+
+* **Open-Source Status**: Fully open-source Python library for building web-based data apps\[9\].
+    
+* **Freemium Tier**: Free self-hosting; paid cloud plans for deployment and collaboration features\[9\].
+    
+
+---
+
+### **10\. Stability AI**
+
+* **Open-Source Status**: Stability AI develops fully open-source generative models like Stable Diffusion, which are widely adopted in the community\[10\].
+    
+* **Freemium Tier**: Free access to models; monetizes through enterprise-grade tools like DreamStudio hosting solutions\[10\].
+    
+
+---
+
+### **11\. Databricks**
+
+* **Open-Source Status**: Actively contributes to open-source projects like MLflow and recently announced plans to open source Unity Catalog\[11\].
+    
+* **Freemium Tier**: Offers free-tier access to personal users; monetizes through managed enterprise solutions\[11\].
+    
+
+---
+
+### **12\. Prefect**
+
+* **Open-Source Status**: Prefect Core is fully open-source under the Apache 2.0 license\[12\].
+    
+* **Freemium Tier**: Free self-hosted orchestration; Prefect Cloud provides premium features like SSO, RBAC, and advanced monitoring as paid options\[12\].
+    
+
+---
+
+### **13\. Gradio**
+
+* **Open-Source Status**: Fully open-source library for creating interactive ML demos and interfaces.
+    
+* **Freemium Tier**: Free-tier for public apps; paid plans offer private hosting and higher-scale deployments.
+    
+
+---
+
+### **14\. TensorFlow (Google)**
+
+* **Open-Source Status**: TensorFlow is a pioneer in the AI space as a fully open-source machine learning framework.
+    
+* **Freemium Tier**: Free for development; monetized through integrations with Google Cloud services.
+    
+
+---
