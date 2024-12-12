@@ -387,3 +387,117 @@ CMD ["python", "app.py"]
 Visit `http://localhost:8000` to see the app live!
 
 ---
+
+### **When to Use Docker**
+
+1. **Portability Across Environments**:
+    
+    * **Use Case**: You want to run your app (API, model, etc.) on different platforms (your laptop, cloud servers, client systems) without worrying about dependencies.
+        
+    * Example:
+        
+        * Your model requires specific libraries, Python versions, or system setups that might not match the server/cloud environment.
+            
+2. **Custom Backend or API**:
+    
+    * **Use Case**: You’re building a custom API (e.g., with FastAPI) and need full control over the setup.
+        
+    * Example:
+        
+        * You build an Airtable-to-API app or image captioning service with FastAPI and want to deploy it anywhere.
+            
+3. **Scalable Deployment**:
+    
+    * **Use Case**: You need to run multiple instances of your API for scaling.
+        
+    * Example:
+        
+        * Deploying your Dockerized app on **Kubernetes**, **Google Cloud Run**, or **AWS Fargate**.
+            
+4. **Self-Hosting**:
+    
+    * **Use Case**: You don’t want to rely on managed services like Hugging Face Inference API.
+        
+    * Example:
+        
+        * Running your model on your own server instead of paying for managed hosting.
+            
+
+---
+
+### **When NOT to Use Docker**
+
+1. **Using Managed Hosting**:
+    
+    * **Use Case**: Platforms like **Hugging Face Inference API** or **Hugging Face Spaces** already handle hosting.
+        
+    * Example:
+        
+        * You push your model to Hugging Face, and they host it. No need to containerize—it’s already live.
+            
+2. **Simpler Local Use**:
+    
+    * **Use Case**: You’re running code on Colab, Jupyter, or your local machine.
+        
+    * Example:
+        
+        * Fine-tuning a model or testing locally doesn’t require Docker since you control the environment.
+            
+3. **Quick Prototyping**:
+    
+    * **Use Case**: You’re building quick demos.
+        
+    * Example:
+        
+        * Using **Gradio** or **Streamlit** locally or on Hugging Face Spaces—these tools don’t need Docker to work.
+            
+4. **One-Off Deployments**:
+    
+    * **Use Case**: Your deployment environment already matches your code setup.
+        
+    * Example:
+        
+        * If your cloud server supports Python and the required libraries, you can skip Docker.
+            
+
+---
+
+### **Key Differences**
+
+| **Scenario** | **Use Docker** | **Don’t Use Docker** |
+| --- | --- | --- |
+| **Need portability** | Yes | No |
+| **Custom backend/API** | Yes (e.g., FastAPI, Flask) | No (using Hugging Face Inference API) |
+| **Managed hosting available** | No | Yes |
+| **Quick demo on Spaces/Colab** | No | Yes |
+| **Complex dependencies** | Yes | No (if dependencies are easy to install) |
+
+---
+
+### **Example Workflows**
+
+#### **Using Docker**
+
+* **You build**: A custom API for text generation using FastAPI.
+    
+* **Docker Needed**: To containerize your app and ensure it runs anywhere.
+    
+* **Deploy**: Host on **Google Cloud Run** or **Render**.
+    
+
+#### **Not Using Docker**
+
+* **You build**: A chatbot using Hugging Face Transformers.
+    
+* **No Docker Needed**: Push the model to Hugging Face Hub and enable the Inference API.
+    
+* **Deploy**: Hugging Face handles hosting.
+    
+
+---
+
+### **Rule of Thumb**
+
+* **If it’s managed for you** (e.g., Hugging Face), skip Docker.
+    
+* **If you need control or portability**, use Docker.
