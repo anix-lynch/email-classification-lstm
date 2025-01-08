@@ -1,8 +1,11 @@
 ---
 title: "Semantic Routing VS LLM-Based Routing"
+seoTitle: "Semantic Routing VS LLM-Based Routing"
+seoDescription: "Semantic Routing VS LLM-Based Routing"
 datePublished: Wed Jan 08 2025 12:07:19 GMT+0000 (Coordinated Universal Time)
 cuid: cm5nuu5nf000309mg3knohfxf
 slug: semantic-routing-vs-llm-based-routing
+tags: ai, llm, langchain, rag
 
 ---
 
