@@ -1,10 +1,10 @@
 ---
-title: "Generative AI for Research Summarization w/Langchain & HuggingFace Hub"
+title: "Generative AI for Research Summarization w/Langchain & HuggingFace Hub & Colab"
 seoTitle: "Generative AI for Research Summarization w/Langchain & HuggingFace Hub"
 seoDescription: "Generative AI for Research Summarization w/Langchain & HuggingFace Hub"
 datePublished: Wed Jan 15 2025 05:47:29 GMT+0000 (Coordinated Universal Time)
 cuid: cm5xhcna2001209mh6fdb7e8e
-slug: generative-ai-for-research-summarization-wlangchain-huggingface-hub
+slug: generative-ai-for-research-summarization-wlangchain-huggingface-hub-colab
 tags: llm, langchain, genai, agentic-ai, huggingfacehub
 
 ---
