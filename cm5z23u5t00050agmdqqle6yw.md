@@ -1,10 +1,10 @@
 ---
-title: "8 Different techniques for handling missing data (Feature engineering)"
+title: "Different techniques for handling missing data (Feature engineering)"
 seoTitle: "8 Different techniques for handling missing data (Feature engineering)"
 seoDescription: "8 Different techniques for handling missing data (Feature engineering)"
 datePublished: Thu Jan 16 2025 08:16:16 GMT+0000 (Coordinated Universal Time)
 cuid: cm5z23u5t00050agmdqqle6yw
-slug: 8-different-techniques-for-handling-missing-data-feature-engineering
+slug: different-techniques-for-handling-missing-data-feature-engineering
 tags: machine-learning, pandas, sklearn, feature-engineering, missing-data
 
 ---
@@ -245,3 +245,182 @@ print("\\nK-Nearest Neighbors Imputation:\\n", knn_imputed)
 3  4.000000  3.500000  40.000000
 4  5.000000  5.000000  25.000000
 ```
+
+Here are **different methods for imputing missing categorical data**, each in its own code block with explanations and expected outputs.
+
+---
+
+### 1\. **Frequent Category Imputation using** `pandas`
+
+```python
+import pandas as pd
+import numpy as np
+
+# Sample dataset
+data = {'A': ['cat', 'dog', np.nan, 'cat', np.nan], 'B': ['yes', np.nan, 'no', 'no', 'yes']}
+df = pd.DataFrame(data)
+
+# Fill missing values with the most frequent value
+frequent_values = df.mode().iloc[0].to_dict()
+df_frequent = df.fillna(value=frequent_values)
+
+print("Original Dataset:\n", df)
+print("\nAfter Frequent Category Imputation:\n", df_frequent)
+```
+
+#### Output:
+
+```python
+Original Dataset:
+        A    B
+0    cat  yes
+1    dog  NaN
+2    NaN   no
+3    cat   no
+4    NaN  yes
+
+After Frequent Category Imputation:
+        A    B
+0    cat  yes
+1    dog  yes
+2    cat   no
+3    cat   no
+4    cat  yes
+```
+
+---
+
+### 2\. **Imputation with a Specific String**
+
+```python
+# Replace missing values with a specific string
+df_specific = df.fillna("missing")
+
+print("\nAfter Imputation with a Specific String:\n", df_specific)
+```
+
+#### Output:
+
+```python
+After Imputation with a Specific String:
+          A        B
+0      cat      yes
+1      dog  missing
+2  missing       no
+3      cat       no
+4  missing      yes
+```
+
+---
+
+### 3\. **Frequent Category Imputation using** `SimpleImputer` (Scikit-learn)
+
+```python
+from sklearn.impute import SimpleImputer
+
+# Set up the imputer for the most frequent category
+imputer = SimpleImputer(strategy="most_frequent")
+
+# Apply to categorical columns
+df_sklearn = pd.DataFrame(imputer.fit_transform(df), columns=df.columns)
+
+print("\nAfter Frequent Category Imputation with SimpleImputer:\n", df_sklearn)
+```
+
+#### Output:
+
+```python
+After Frequent Category Imputation with SimpleImputer:
+        A    B
+0    cat  yes
+1    dog  yes
+2    cat   no
+3    cat   no
+4    cat  yes
+```
+
+---
+
+### 4\. **Arbitrary String Replacement using** `SimpleImputer`
+
+```python
+# Replace missing values with an arbitrary string
+imputer_arbitrary = SimpleImputer(strategy="constant", fill_value="unknown")
+df_arbitrary = pd.DataFrame(imputer_arbitrary.fit_transform(df), columns=df.columns)
+
+print("\nAfter Arbitrary String Replacement with SimpleImputer:\n", df_arbitrary)
+```
+
+#### Output:
+
+```python
+After Arbitrary String Replacement with SimpleImputer:
+          A        B
+0      cat      yes
+1      dog  unknown
+2  unknown       no
+3      cat       no
+4  unknown      yes
+```
+
+---
+
+### 5\. **Feature-engine** `CategoricalImputer` for Frequent Category
+
+```python
+from feature_engine.imputation import CategoricalImputer
+
+# Set up the imputer for the most frequent category
+imputer_feature_engine = CategoricalImputer(imputation_method="frequent", variables=["A", "B"])
+imputer_feature_engine.fit(df)
+df_feature_engine = imputer_feature_engine.transform(df)
+
+print("\nAfter Frequent Category Imputation with Feature-engine:\n", df_feature_engine)
+```
+
+#### Output:
+
+```python
+After Frequent Category Imputation with Feature-engine:
+        A    B
+0    cat  yes
+1    dog  yes
+2    cat   no
+3    cat   no
+4    cat  yes
+```
+
+---
+
+### 6\. **Feature-engine** `CategoricalImputer` for Arbitrary String
+
+```python
+# Replace missing values with an arbitrary string
+imputer_feature_engine_str = CategoricalImputer(imputation_method="missing", fill_value="none", variables=["A", "B"])
+imputer_feature_engine_str.fit(df)
+df_feature_engine_str = imputer_feature_engine_str.transform(df)
+
+print("\nAfter Arbitrary String Replacement with Feature-engine:\n", df_feature_engine_str)
+```
+
+#### Output:
+
+```python
+After Arbitrary String Replacement with Feature-engine:
+          A      B
+0      cat    yes
+1      dog    none
+2     none     no
+3      cat     no
+4     none    yes
+```
+
+---
+
+### Key Differences:
+
+* **Frequent Category Imputation** replaces missing values with the most common value in each column.
+    
+* **Arbitrary String Replacement** assigns a specific string (e.g., "missing" or "unknown") to missing values.
+    
+* Tools like `pandas`, `SimpleImputer`, and `Feature-engine` all achieve similar results, but their usage and flexibility vary.
