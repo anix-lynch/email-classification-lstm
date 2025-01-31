@@ -5,7 +5,7 @@ seoDescription: "🔥 Claude MCP (Model Context Protocol) Explained"
 datePublished: Fri Jan 31 2025 15:49:05 GMT+0000 (Coordinated Universal Time)
 cuid: cm6kxvy3z000d09js44v42du7
 slug: claude-mcp-model-context-protocol-explained
-tags: claudeai
+tags: apis, claudeai, mcp, tool-calling
 
 ---
 
