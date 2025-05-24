@@ -20,10 +20,6 @@ slug: dramatic-day-in-life-of-data-scientist
 | **SQS/Kinesis** | Queue for buffering events | Messages dropped. Metrics gone. | Added sleep. Said "AWS is weird today." | Set DLQ (dead letter queue), monitored queue depth. | Not a single message lost. Alerts tell you before overflow. |
 | **WebSocket** | Real-time, two-way comms | Feels like magic. Breaks like magic too. | Refreshed page. Hoped it works again. | Handled disconnects + heartbeat checks. | Real-time dashboard never drops. Users don’t even know it’s WebSocket. |
 
----
-
-Perfect. Here's the next cluster:
-
 ## 🧠 **Modeling & Metrics**
 
 | Term | Plain English | Real Drama 😵‍💫 | What You Did 🧯 | What You *Should* Have Done 🧠 | Ideal World 🌈 |
@@ -38,8 +34,6 @@ Perfect. Here's the next cluster:
 | **ROC/AUC** | Curve showing model quality | Looked amazing. But irrelevant to business. | Used it as the one metric. | Combined ROC with business KPIs (e.g. cost per FP). | Metrics align with real impact. Not just "math pretty", but useful too. |
 
 ---
-
-Alright, here’s the next one:
 
 ## 📊 **Dashboards & Stakeholder Wrangling**
 
